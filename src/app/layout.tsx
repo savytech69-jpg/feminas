@@ -24,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <base href="/feminas/" />
+      </head>
       <body className={`${inter.className} antialiased`}>
         <Header />
         <main className="min-h-screen">
