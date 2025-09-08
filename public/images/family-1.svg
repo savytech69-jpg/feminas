@@ -1,0 +1,14 @@
+<svg width="400" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="family1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fed7aa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#family1)"/>
+  <circle cx="150" cy="180" r="40" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="250" cy="180" r="35" fill="#d97706" opacity="0.3"/>
+  <circle cx="200" cy="220" r="25" fill="#b45309" opacity="0.3"/>
+  <text x="200" y="320" font-family="Arial, sans-serif" font-size="20" fill="#92400e" text-anchor="middle" font-weight="bold">Family Makeover</text>
+  <text x="200" y="350" font-family="Arial, sans-serif" font-size="14" fill="#78350f" text-anchor="middle">Mother & Daughter Session</text>
+</svg>

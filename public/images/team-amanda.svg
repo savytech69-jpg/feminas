@@ -1,0 +1,18 @@
+<svg width="300" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="team4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ecfdf5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#team4)"/>
+  <circle cx="150" cy="150" r="60" fill="#10b981" opacity="0.2"/>
+  <circle cx="150" cy="150" r="50" fill="#059669" opacity="0.3"/>
+  <circle cx="135" cy="140" r="5" fill="#047857"/>
+  <circle cx="165" cy="140" r="5" fill="#047857"/>
+  <path d="M 135 170 Q 150 180 165 170" stroke="#047857" stroke-width="2" fill="none"/>
+  <path d="M 130 115 Q 150 95 170 115 Q 160 135 150 125 Q 140 135 130 115" fill="#065f46" opacity="0.4"/>
+  <text x="150" y="280" font-family="Arial, sans-serif" font-size="18" fill="#047857" text-anchor="middle" font-weight="bold">Amanda White</text>
+  <text x="150" y="305" font-family="Arial, sans-serif" font-size="14" fill="#065f46" text-anchor="middle">Hair Color Specialist</text>
+  <text x="150" y="325" font-family="Arial, sans-serif" font-size="12" fill="#059669" text-anchor="middle">5+ Years Experience</text>
+</svg>

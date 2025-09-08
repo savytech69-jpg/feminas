@@ -1,0 +1,14 @@
+<svg width="400" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bridal2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fdf2f8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bridal2)"/>
+  <circle cx="200" cy="180" r="65" fill="#f59e0b" opacity="0.2"/>
+  <circle cx="200" cy="180" r="45" fill="#ec4899" opacity="0.3"/>
+  <path d="M 170 160 Q 200 140 230 160" stroke="#db2777" stroke-width="3" fill="none"/>
+  <text x="200" y="300" font-family="Arial, sans-serif" font-size="20" fill="#831843" text-anchor="middle" font-weight="bold">Modern Bride</text>
+  <text x="200" y="330" font-family="Arial, sans-serif" font-size="14" fill="#9d174d" text-anchor="middle">Contemporary Elegance</text>
+</svg>
