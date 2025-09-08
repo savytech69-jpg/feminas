@@ -6,8 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/feminas' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/feminas/' : '',
+  // Remove basePath and assetPrefix for GitHub Pages to work properly
+  // basePath: process.env.NODE_ENV === 'production' ? '/feminas' : '',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '/feminas/' : '',
 };
 
 export default nextConfig;
