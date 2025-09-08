@@ -1,14 +1,18 @@
 import type { NextConfig } from "next";
 
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
+
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
   images: {
     unoptimized: true
   },
-  // Remove basePath and assetPrefix for GitHub Pages to work properly
-  // basePath: process.env.NODE_ENV === 'production' ? '/feminas' : '',
-  // assetPrefix: process.env.NODE_ENV === 'production' ? '/feminas/' : '',
+  // Only use basePath in GitHub Actions environment
+  ...(isGitHubPages && {
+    basePath: '/feminas',
+    assetPrefix: '/feminas/',
+  }),
 };
 
 export default nextConfig;
