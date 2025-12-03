@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment • Feminas Family Makeover Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="include-header"></div>
+
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Book Appointment</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="sep">›</span>
+        <span>Book Appointment</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="section booking">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Book Your <span class="text-magenta">Appointment</span></h2>
+        <p class="section-subtitle">Fill in your details or chat with us on WhatsApp for quick assistance.</p>
+      </div>
+      <div class="booking-wrapper">
+        <div class="booking-info">
+          <div class="contact-details">
+            <div class="detail-item"><i class="fas fa-map-marker-alt"></i> 123, Fashion Street, City Center</div>
+            <div class="detail-item"><i class="fas fa-phone-alt"></i> +91 98765 43210</div>
+            <div class="detail-item"><i class="fab fa-whatsapp"></i> +91 98765 43211</div>
+          </div>
+          <a href="https://wa.me/919876543210" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+        </div>
+        <div class="booking-form-container">
+          <form class="booking-form">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="Your Phone" required>
+            </div>
+            <div class="form-group">
+              <label>Service</label>
+              <select>
+                <option>Select Service</option>
+                <option>Facial</option>
+                <option>Hair Cut/Spa</option>
+                <option>Bridal Makeup</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Preferred Date</label>
+              <input type="date">
+            </div>
+            <button type="submit" class="btn btn-primary full-width">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="include-footer"></div>
+
+  <script src="include.js"></script>
+</body>
+</html>
