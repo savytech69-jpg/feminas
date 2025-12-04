@@ -2596,4 +2596,149 @@ a {
     .cta-minimal {
         padding: 80px 0;
     }
+
+    /* Services Grid Modern Mobile */
+    .services-grid-modern {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .service-tile {
+        min-height: 400px;
+    }
+
+    .service-tile.spa-wide {
+        grid-column: span 1;
+    }
+
+    .service-tile h3 {
+        font-size: 1.6rem;
+    }
+
+    .service-tile p {
+        font-size: 0.95rem;
+    }
+
+    /* Hero Section Mobile */
+    .hero-inner {
+        padding: 40px 0;
+    }
+
+    .hero-eyebrow {
+        font-size: 0.8rem;
+    }
+
+    .headline {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .subheadline {
+        font-size: 1rem;
+    }
+
+    .hero-card {
+        padding: 28px 20px;
+    }
+
+    .bridal-mega-badge {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 20px;
+    }
+
+    .mega-flat {
+        font-size: 0.9rem;
+    }
+
+    .mega-number {
+        font-size: 3rem;
+    }
+
+    .mega-text {
+        font-size: 1rem;
+    }
+
+    .bridal-title {
+        font-size: 1.4rem;
+    }
+
+    .bridal-features {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    .hero-list li {
+        font-size: 0.9rem;
+    }
+
+    .btn-white {
+        padding: 12px 28px;
+        font-size: 0.95rem;
+    }
+
+    /* Navbar Mobile */
+    .logo-img {
+        height: 60px;
+    }
+
+    .navbar {
+        padding: 8px 0;
+    }
+
+    /* Floating Elements Mobile - Reduce Density */
+    .float-element {
+        font-size: 1.5rem;
+    }
+
+    .float-element.element-7,
+    .float-element.element-8,
+    .float-element.element-9,
+    .float-element.element-10 {
+        display: none;
+    }
 }
+
+/* Additional Mobile Optimization for smaller screens */
+@media (max-width: 480px) {
+    .headline {
+        font-size: 1.8rem;
+    }
+
+    .cta-heading-modern {
+        font-size: 2rem;
+    }
+
+    .title-luxe {
+        font-size: 1.8rem;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .btn-cta-primary,
+    .btn-cta-secondary {
+        padding: 16px 32px;
+        font-size: 0.95rem;
+    }
+
+    .service-tile {
+        min-height: 350px;
+    }
+
+    .bridal-mega-badge {
+        width: 120px;
+        height: 120px;
+    }
+
+    .mega-number {
+        font-size: 2.5rem;
+    }
+}
+
