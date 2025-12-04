@@ -6,71 +6,780 @@
   <title>Services • Feminas Family Makeover Studio</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="include-header"></div>
 
-  <header class="page-header">
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="container">
-      <h1 class="page-title">Services</h1>
-      <div class="breadcrumbs">
-        <a href="index.html">Home</a>
-        <span class="sep">›</span>
-        <span>Services</span>
+      <a href="index.html" class="logo">
+        <img src="images/femlogo.png" alt="Feminas Family Makeover Studio logo" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="btn-nav">Book Now</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <main class="section services">
+  <!-- Hero Section -->
+  <section class="services-hero-new">
+    <div class="hero-bg-image">
+      <img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Beauty Services Background">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Our <span class="text-gold">Services</span></h2>
-        <p class="section-subtitle">Facials, hair, bridal, spa—crafted for luxury and comfort.</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="card-image" style="background-image:url('https://placehold.co/600x400/4b1b74/FFF?text=Facials');"></div>
-          <div class="card-content">
-            <h3>Premium Facials</h3>
-            <p>Gold & diamond facials for instant radiance.</p>
-            <div class="price">Starts at ₹999</div>
-            <a href="contact.html" class="btn btn-sm">Book Now</a>
-          </div>
+      <div class="hero-content-centered">
+        <span class="hero-badge">💎 Premium Beauty Services</span>
+        <h1 class="hero-title-new">
+          <span class="gradient-text-animated">Transform Your Beauty</span>
+          <br>
+          <span class="hero-subtitle-accent">With Our Signature Services</span>
+        </h1>
+        <p class="hero-subtitle-new">Experience luxury treatments crafted by expert stylists for every celebration – from bridal makeovers to everyday elegance</p>
+        <div class="hero-cta-group">
+          <a href="contact.html" class="btn-hero-primary">
+            <span>Book Appointment</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://wa.me/918907288617?text=Hi" class="btn-hero-outline">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chat with Us</span>
+          </a>
         </div>
-        <div class="service-card">
-          <div class="card-image" style="background-image:url('https://placehold.co/600x400/4b1b74/FFF?text=Hair+Styling');"></div>
-          <div class="card-content">
-            <h3>Hair Styling & Spa</h3>
-            <p>Creative cuts, coloring & relaxing hair spas.</p>
-            <div class="price">Starts at ₹499</div>
-            <a href="contact.html" class="btn btn-sm">Book Now</a>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years Experience</div>
           </div>
-        </div>
-        <div class="service-card">
-          <div class="card-image" style="background-image:url('https://placehold.co/600x400/4b1b74/FFF?text=Bridal');"></div>
-          <div class="card-content">
-            <h3>Bridal Makeup</h3>
-            <p>Curated bridal packages for your big day.</p>
-            <div class="price">Starts at ₹4999</div>
-            <a href="contact.html" class="btn btn-sm">Book Now</a>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number">5000+</div>
+            <div class="stat-label">Happy Clients</div>
           </div>
-        </div>
-        <div class="service-card">
-          <div class="card-image" style="background-image:url('https://placehold.co/600x400/4b1b74/FFF?text=Spa');"></div>
-          <div class="card-content">
-            <h3>Spa Rituals</h3>
-            <p>Relaxation therapies for mind & body.</p>
-            <div class="price">Starts at ₹799</div>
-            <a href="contact.html" class="btn btn-sm">Book Now</a>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Services</div>
           </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <main class="services-main-new">
+    
+    <!-- Hair Services Section -->
+    <section class="service-section-new hair-services">
+      <div class="container">
+        <div class="section-header-new">
+          <span class="section-badge-new">✨ Transform</span>
+          <h2 class="section-title-new"><span class="gradient-text-animated">Hair Artistry</span></h2>
+          <p class="section-desc-new">Expert cuts, colors, and treatments for healthy, beautiful hair</p>
+        </div>
+
+        <div class="hair-two-col-grid">
+          <!-- Left Column: Cut & Style / Finish -->
+          <div class="hair-column">
+            <div class="column-header">
+              <div class="column-icon">✂️</div>
+              <h3>Cut & Style / Finish</h3>
+            </div>
+            
+            <div class="hair-service-card">
+              <div class="hair-service-img">
+                <img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Haircut">
+                <div class="img-overlay"></div>
+              </div>
+              <div class="hair-service-content">
+                <h4>Haircut & Luxury Blow-dry</h4>
+                <p>Precision cut tailored to your face shape with a luxurious blow-dry finish</p>
+                <div class="hair-tags-group">
+                  <span class="hair-tag">Short</span>
+                  <span class="hair-tag">Medium</span>
+                  <span class="hair-tag">Long</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hair-service-card">
+              <div class="hair-service-img">
+                <img src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Hair Spa">
+                <div class="img-overlay"></div>
+              </div>
+              <div class="hair-service-content">
+                <h4>Signature Hair Spa & Scalp Ritual</h4>
+                <p>Deep conditioning with hot towel wrap, scalp massage, and nourishing mask</p>
+                <div class="hair-tags-group">
+                  <span class="hair-tag">All Hair Types</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hair-service-card">
+              <div class="hair-service-img">
+                <img src="https://images.pexels.com/photos/3738388/pexels-photo-3738388.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Bridal Hair">
+                <div class="img-overlay"></div>
+              </div>
+              <div class="hair-service-content">
+                <h4>Bridal & Occasion Hair Styling</h4>
+                <p>Elegant updos, romantic curls, and intricate braids for your special day</p>
+                <div class="hair-tags-group">
+                  <span class="hair-tag">Updos</span>
+                  <span class="hair-tag">Curls</span>
+                  <span class="hair-tag">Braids</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Colour & Texture -->
+          <div class="hair-column">
+            <div class="column-header">
+              <div class="column-icon">🎨</div>
+              <h3>Colour & Texture</h3>
+            </div>
+            
+            <div class="hair-service-card">
+              <div class="hair-service-img">
+                <img src="https://images.pexels.com/photos/3992870/pexels-photo-3992870.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Smoothening">
+                <div class="img-overlay"></div>
+              </div>
+              <div class="hair-service-content">
+                <h4>Smoothening / Straightening / Anti-frizz</h4>
+                <p>Keratin treatments, Botox for silky, manageable hair</p>
+                <div class="hair-tags-group">
+                  <span class="hair-tag">Keratin</span>
+                  <span class="hair-tag">Botox</span>
+                  <span class="hair-tag">Brazilian</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hair-service-card">
+              <div class="hair-service-img">
+                <img src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Hair Color">
+                <div class="img-overlay"></div>
+              </div>
+              <div class="hair-service-content">
+                <h4>Global Colour, Root Touch-up, Highlights, Balayage</h4>
+                <p>Expert color services from subtle highlights to bold transformations</p>
+                <div class="hair-tags-group">
+                  <span class="hair-tag">Global</span>
+                  <span class="hair-tag">Highlights</span>
+                  <span class="hair-tag">Balayage</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hair-service-card">
+              <div class="hair-service-img">
+                <img src="https://images.pexels.com/photos/3992860/pexels-photo-3992860.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Repair Treatment">
+                <div class="img-overlay"></div>
+              </div>
+              <div class="hair-service-content">
+                <h4>Advanced Repair Treatments</h4>
+                <p>Olaplex / Bond Repair, Color Protection for damaged hair restoration</p>
+                <div class="hair-tags-group">
+                  <span class="hair-tag">Olaplex</span>
+                  <span class="hair-tag">Bond Repair</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Makeup & Bridal Section -->
+    <section class="service-section-new makeup-bridal-services">
+      <div class="container">
+        <div class="section-header-new">
+          <span class="section-badge-new">💄 Glamour</span>
+          <h2 class="section-title-new"><span class="gradient-text-animated">Makeup & Bridal</span></h2>
+          <p class="section-desc-new">Flawless beauty for every moment</p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="service-tabs-new">
+          <button class="tab-btn-new active" onclick="switchTab('occasion')">
+            <i class="fas fa-star"></i>
+            <span>Occasion Makeup</span>
+          </button>
+          <button class="tab-btn-new" onclick="switchTab('bridal')">
+            <i class="fas fa-gem"></i>
+            <span>Bridal & Pre-Bridal</span>
+          </button>
+        </div>
+
+        <!-- Occasion Makeup Tab -->
+        <div id="occasion-tab" class="tab-content-new active">
+          <div class="makeup-grid-new">
+            <div class="makeup-card-new">
+              <div class="makeup-img-box">
+                <img src="https://images.pexels.com/photos/1115680/pexels-photo-1115680.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Party Makeup">
+                <div class="makeup-overlay"></div>
+                <span class="makeup-badge">Popular</span>
+              </div>
+              <div class="makeup-content-box">
+                <h4>HD Party Makeup</h4>
+                <p>Bold, glamorous looks with shimmer and drama</p>
+              </div>
+            </div>
+
+            <div class="makeup-card-new">
+              <div class="makeup-img-box">
+                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Airbrush">
+                <div class="makeup-overlay"></div>
+              </div>
+              <div class="makeup-content-box">
+                <h4>Airbrush Makeup</h4>
+                <p>Flawless, long-lasting airbrush finish</p>
+              </div>
+            </div>
+
+            <div class="makeup-card-new">
+              <div class="makeup-img-box">
+                <img src="https://images.pexels.com/photos/1264883/pexels-photo-1264883.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Engagement">
+                <div class="makeup-overlay"></div>
+              </div>
+              <div class="makeup-content-box">
+                <h4>Engagement / Reception Makeup</h4>
+                <p>Romantic, sophisticated pre-wedding glam</p>
+              </div>
+            </div>
+
+            <div class="makeup-card-new">
+              <div class="makeup-img-box">
+                <img src="https://images.pexels.com/photos/1164674/pexels-photo-1164674.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Photoshoot">
+                <div class="makeup-overlay"></div>
+              </div>
+              <div class="makeup-content-box">
+                <h4>Photoshoot / Fashion Makeup</h4>
+                <p>Camera-ready HD makeup for stunning shots</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add-ons -->
+          <div class="addons-section-new">
+            <h3 class="addons-title">Add-ons & Extras</h3>
+            <div class="addons-grid-new">
+              <div class="addon-card-new">
+                <i class="addon-icon fas fa-eye"></i>
+                <h5>False Lashes</h5>
+              </div>
+              <div class="addon-card-new">
+                <i class="addon-icon fas fa-sparkles"></i>
+                <h5>Glitter Eyes</h5>
+              </div>
+              <div class="addon-card-new">
+                <i class="addon-icon fas fa-user-tie"></i>
+                <h5>Male Groom Makeup</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bridal Tab -->
+        <div id="bridal-tab" class="tab-content-new">
+          <div class="bridal-services-grid-new">
+            <div class="bridal-card-new featured">
+              <div class="bridal-img-wrapper">
+                <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bridal Makeup">
+                <div class="bridal-overlay"></div>
+                <span class="featured-badge">Most Booked</span>
+              </div>
+              <div class="bridal-card-content">
+                <h4>Bridal Makeup – Traditional / Contemporary</h4>
+                <p>Stunning bridal looks customized to your style and wedding theme</p>
+              </div>
+            </div>
+
+            <div class="bridal-card-new">
+              <div class="bridal-img-wrapper">
+                <img src="https://images.pexels.com/photos/1587976/pexels-photo-1587976.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Bridal Hair">
+                <div class="bridal-overlay"></div>
+              </div>
+              <div class="bridal-card-content">
+                <h4>Bridal Hairstyle & Draping</h4>
+                <p>Elegant hairstyles with expert saree draping</p>
+              </div>
+            </div>
+
+            <div class="bridal-card-new">
+              <div class="bridal-img-wrapper">
+                <img src="https://images.pexels.com/photos/1729797/pexels-photo-1729797.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Complete Package">
+                <div class="bridal-overlay"></div>
+              </div>
+              <div class="bridal-card-content">
+                <h4>Complete Bridal Makeover Package</h4>
+                <p>Trial, makeup, hair, draping, and nails – everything included</p>
+              </div>
+            </div>
+
+            <div class="bridal-card-new">
+              <div class="bridal-img-wrapper">
+                <img src="https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Pre-Bridal">
+                <div class="bridal-overlay"></div>
+              </div>
+              <div class="bridal-card-content">
+                <h4>Pre-Bridal Rituals</h4>
+                <p>Skin, hair, hands & feet prep, body polishing</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Signature Bridal Looks -->
+          <div class="signature-looks-section-new">
+            <h3 class="signature-title">Signature Bridal Looks</h3>
+            <div class="signature-looks-grid">
+              <div class="signature-look-card">
+                <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Traditional Bride">
+                <div class="signature-overlay">
+                  <div class="look-info">
+                    <h5>Traditional Elegance</h5>
+                    <p>Classic bridal beauty with timeless charm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="signature-look-card">
+                <img src="https://images.pexels.com/photos/1729797/pexels-photo-1729797.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Contemporary Bride">
+                <div class="signature-overlay">
+                  <div class="look-info">
+                    <h5>Contemporary Glam</h5>
+                    <p>Modern, minimal with a touch of drama</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="signature-cta">
+              <a href="contact.html" class="btn-bridal-explore">
+                <span>Explore Bridal Packages</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skin, Facials & Advanced Care -->
+    <section class="service-section-new facials-section">
+      <div class="container">
+        <div class="section-header-new">
+          <span class="section-badge-new">🌟 Glow</span>
+          <h2 class="section-title-new"><span class="gradient-text-animated">Skin, Facials & Advanced Care</span></h2>
+          <p class="section-desc-new">Science-backed treatments for radiant, healthy skin</p>
+        </div>
+
+        <!-- Glow Facials -->
+        <div class="facial-category-new">
+          <h3 class="category-heading-new">
+            <i class="fas fa-star"></i>
+            Glow Facials
+          </h3>
+          <div class="facials-grid-new">
+            <div class="facial-card-new">
+              <div class="facial-img-wrapper">
+                <img src="https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Cleansing Facial">
+                <div class="facial-overlay"></div>
+                <span class="time-badge">60 min</span>
+              </div>
+              <div class="facial-card-content">
+                <h4>Classic Cleansing & Hydrating Facials</h4>
+                <p>Deep cleanse with intense hydration boost</p>
+              </div>
+            </div>
+
+            <div class="facial-card-new">
+              <div class="facial-img-wrapper">
+                <img src="https://images.pexels.com/photos/3738383/pexels-photo-3738383.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Brightening">
+                <div class="facial-overlay"></div>
+                <span class="time-badge">60 min</span>
+              </div>
+              <div class="facial-card-content">
+                <h4>Brightening / De-tan Facials</h4>
+                <p>Remove tan and restore natural radiance</p>
+              </div>
+            </div>
+
+            <div class="facial-card-new">
+              <div class="facial-img-wrapper">
+                <img src="https://images.pexels.com/photos/3985322/pexels-photo-3985322.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Korean Glass Skin">
+                <div class="facial-overlay"></div>
+                <span class="time-badge">60 min</span>
+              </div>
+              <div class="facial-card-content">
+                <h4>Vitamin C or Korean Glass Skin Facial</h4>
+                <p>Translucent, dewy K-beauty glow</p>
+              </div>
+            </div>
+
+            <div class="facial-card-new">
+              <div class="facial-img-wrapper">
+                <img src="https://images.pexels.com/photos/3985340/pexels-photo-3985340.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Express Cleanup">
+                <div class="facial-overlay"></div>
+                <span class="time-badge">30 min</span>
+              </div>
+              <div class="facial-card-content">
+                <h4>Express Clean-up</h4>
+                <p>Quick refresh for busy schedules</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dermat-inspired Treatments -->
+        <div class="facial-category-new">
+          <h3 class="category-heading-new">
+            <i class="fas fa-flask"></i>
+            Dermat-inspired Treatments
+          </h3>
+          <div class="facials-grid-new">
+            <div class="facial-card-new advanced">
+              <div class="facial-img-wrapper">
+                <img src="https://images.pexels.com/photos/3985320/pexels-photo-3985320.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Anti-Aging">
+                <div class="facial-overlay"></div>
+                <span class="advanced-badge">Advanced</span>
+              </div>
+              <div class="facial-card-content">
+                <h4>Anti-ageing / Collagen Boost Facials</h4>
+                <p>Reduce fine lines and restore firmness</p>
+              </div>
+            </div>
+
+            <div class="facial-card-new advanced">
+              <div class="facial-img-wrapper">
+                <img src="https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Hydra Facial">
+                <div class="facial-overlay"></div>
+                <span class="advanced-badge">Advanced</span>
+              </div>
+              <div class="facial-card-content">
+                <h4>Hydra / Aqua Facial</h4>
+                <p>Medical-grade hydradermabrasion treatment</p>
+              </div>
+            </div>
+
+            <div class="facial-card-new advanced">
+              <div class="facial-img-wrapper">
+                <img src="https://images.pexels.com/photos/3985321/pexels-photo-3985321.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Microdermabrasion">
+                <div class="facial-overlay"></div>
+                <span class="advanced-badge">Advanced</span>
+              </div>
+              <div class="facial-card-content">
+                <h4>Microdermabrasion</h4>
+                <p>Exfoliate and renew skin texture</p>
+              </div>
+            </div>
+
+            <div class="facial-card-new advanced">
+              <div class="facial-img-wrapper">
+                <img src="https://images.pexels.com/photos/3738388/pexels-photo-3738388.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Chemical Peel">
+                <div class="facial-overlay"></div>
+                <span class="advanced-badge">Advanced</span>
+              </div>
+              <div class="facial-card-content">
+                <h4>Chemical Peel</h4>
+                <p>Professional-grade peel for skin renewal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specialized Treatments -->
+        <div class="facial-category-new">
+          <h3 class="category-heading-new">
+            <i class="fas fa-hand-sparkles"></i>
+            Specialized Care
+          </h3>
+          <div class="specialized-grid-new">
+            <div class="specialized-card-new">
+              <div class="specialized-img">
+                <img src="https://images.pexels.com/photos/3985340/pexels-photo-3985340.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Eye Lip Treatment">
+                <div class="specialized-overlay"></div>
+              </div>
+              <div class="specialized-content">
+                <h4>Eye & Lip Treatments</h4>
+                <p>Dark circle reduction, lip lightening, and rejuvenation treatments</p>
+              </div>
+            </div>
+
+            <div class="specialized-card-new">
+              <div class="specialized-img">
+                <img src="https://images.pexels.com/photos/3997384/pexels-photo-3997384.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Back Facial">
+                <div class="specialized-overlay"></div>
+              </div>
+              <div class="specialized-content">
+                <h4>Back Facial / Bridal Back Treatment</h4>
+                <p>Complete back care for flawless skin in backless outfits</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Waxing & Grooming -->
+        <div class="facial-category-new">
+          <h3 class="category-heading-new">
+            <i class="fas fa-spa"></i>
+            Waxing & Grooming
+          </h3>
+          <div class="waxing-grid-new">
+            <div class="waxing-card-new">
+              <div class="waxing-icon">💫</div>
+              <h4>Full Body Waxing</h4>
+              <p>Arms, legs, underarms, bikini / Brazilian</p>
+            </div>
+
+            <div class="waxing-card-new">
+              <div class="waxing-icon">✨</div>
+              <h4>Threading & Brow Shaping</h4>
+              <p>Perfect arches and clean facial threading</p>
+            </div>
+
+            <div class="waxing-card-new premium">
+              <div class="waxing-icon">👁️</div>
+              <div class="premium-tag">Premium</div>
+              <h4>Lash & Brow Enhancements</h4>
+              <p>Lash lift, extensions, brow lamination & tint</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nails, Hands & Feet -->
+    <section class="service-section-new nails-section">
+      <div class="container">
+        <div class="section-header-new">
+          <span class="section-badge-new">💅 Perfection</span>
+          <h2 class="section-title-new"><span class="gradient-text-animated">Nails, Hands & Feet</span></h2>
+          <p class="section-desc-new">Luxury nail care and pampering spa treatments</p>
+        </div>
+
+        <div class="nails-showcase-grid">
+          <!-- Large Featured Card -->
+          <div class="nail-card-lg">
+            <div class="nail-img-lg">
+              <img src="https://images.pexels.com/photos/1470405/pexels-photo-1470405.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Nail Extensions">
+              <div class="nail-overlay-lg"></div>
+              <span class="nail-badge-featured">Most Popular</span>
+            </div>
+            <div class="nail-content-lg">
+              <h3>Nail Extensions</h3>
+              <p>French, Ombré, 3D Art – custom designs that last</p>
+            </div>
+          </div>
+
+          <!-- Regular Cards -->
+          <div class="nail-card-reg">
+            <div class="nail-img-reg">
+              <img src="https://images.pexels.com/photos/2587457/pexels-photo-2587457.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Classic Mani Pedi">
+              <div class="nail-overlay-reg"></div>
+            </div>
+            <div class="nail-content-reg">
+              <h4>Classic Manicure / Pedicure</h4>
+              <p>Traditional nail care with polish</p>
+            </div>
+          </div>
+
+          <div class="nail-card-reg">
+            <div class="nail-img-reg">
+              <img src="https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Spa Mani Pedi">
+              <div class="nail-overlay-reg"></div>
+            </div>
+            <div class="nail-content-reg">
+              <h4>Spa Manicure / Pedicure</h4>
+              <p>Luxurious spa with mask & massage</p>
+            </div>
+          </div>
+
+          <div class="nail-card-reg">
+            <div class="nail-img-reg">
+              <img src="https://images.pexels.com/photos/939835/pexels-photo-939835.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Gel Polish">
+              <div class="nail-overlay-reg"></div>
+            </div>
+            <div class="nail-content-reg">
+              <h4>Gel Polish – Hands & Feet</h4>
+              <p>Long-lasting, chip-resistant shine</p>
+            </div>
+          </div>
+
+          <div class="nail-card-reg">
+            <div class="nail-img-reg">
+              <img src="https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Nail Art">
+              <div class="nail-overlay-reg"></div>
+            </div>
+            <div class="nail-content-reg">
+              <h4>Nail Art & Refills</h4>
+              <p>Creative designs and maintenance</p>
+            </div>
+          </div>
+
+          <div class="nail-card-reg bridal-special">
+            <div class="nail-img-reg">
+              <img src="https://images.pexels.com/photos/3997399/pexels-photo-3997399.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Bridal Nails">
+              <div class="nail-overlay-reg"></div>
+              <span class="bridal-badge">Bridal</span>
+            </div>
+            <div class="nail-content-reg">
+              <h4>Bridal Nails Package</h4>
+              <p>Complete nail makeover for your big day</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="services-cta-new">
+      <div class="container">
+        <div class="cta-content-new">
+          <h2><span class="gradient-text-animated">Ready to Transform?</span></h2>
+          <p>Book your appointment today and experience luxury beauty</p>
+          <div class="cta-buttons-new">
+            <a href="contact.html" class="btn-cta-primary">
+              <span>Book Appointment</span>
+              <i class="fas fa-calendar-check"></i>
+            </a>
+            <a href="https://wa.me/918907288617?text=Hi" class="btn-cta-secondary">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <div id="include-footer"></div>
+  <!-- Footer -->
+  <footer class="footer-modern">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand-col">
+          <div class="footer-logo">
+            <img src="images/femlogo.png" alt="Feminas Logo" class="footer-logo-img">
+            <div>
+              <h3 class="footer-title">FEMINAS</h3>
+              <p class="footer-tagline">Family Makeover Studio</p>
+            </div>
+          </div>
+          <p class="footer-desc">Where beauty meets luxury. Experience transformative beauty services for every celebration.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://wa.me/918907288617" class="social-link"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
 
-  <script src="js/include.js"></script>
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#hair">Hair Services</a></li>
+            <li><a href="services.html#makeup">Makeup & Bridal</a></li>
+            <li><a href="services.html#facials">Facials</a></li>
+            <li><a href="services.html#nails">Nails & Spa</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Get In Touch</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+918907288617">+91 89072 88617</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@feminas.in">info@feminas.in</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Ulloor, Near Mandhi Manzil, Trivandrum</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>10:00 AM - 8:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Feminas Family Makeover Studio. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#privacy">Privacy Policy</a>
+          <span class="separator">•</span>
+          <a href="#terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/918907288617?text=Hi" class="whatsapp-float" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => navLinks.classList.toggle('active'));
+    }
+    const path = location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      const href = a.getAttribute('href');
+      if (href === path) a.classList.add('active');
+    });
+
+    function switchTab(tabName) {
+      // Hide all tabs
+      document.querySelectorAll('.tab-content-new').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      
+      // Remove active from all buttons
+      document.querySelectorAll('.tab-btn-new').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      // Show selected tab
+      document.getElementById(tabName + '-tab').classList.add('active');
+      
+      // Mark button as active
+      event.target.closest('.tab-btn-new').classList.add('active');
+    }
+  </script>
 </body>
 </html>

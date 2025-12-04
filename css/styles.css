@@ -2801,3 +2801,2240 @@ a {
     }
 }
 
+/* ========================================
+   SERVICES PAGE STYLES
+   ======================================== */
+
+/* Services Hero */
+.services-hero {
+    padding: 100px 0 80px;
+    background: linear-gradient(135deg, rgba(15,5,35,1) 0%, rgba(42,14,69,1) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(255,215,0,0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(255,105,180,0.08) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.breadcrumbs-modern {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.breadcrumbs-modern a {
+    color: rgba(255,215,0,0.8);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumbs-modern a:hover {
+    color: var(--accent-gold);
+}
+
+.breadcrumbs-modern .sep {
+    color: rgba(243,229,245,0.4);
+}
+
+.breadcrumbs-modern span:last-child {
+    color: var(--text-light);
+}
+
+.services-hero-title {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.services-hero-subtitle {
+    font-size: 1.2rem;
+    color: rgba(243,229,245,0.7);
+    max-width: 700px;
+}
+
+/* Service Categories */
+.services-main {
+    background: linear-gradient(180deg, rgba(15,5,35,1) 0%, rgba(25,10,45,1) 100%);
+}
+
+.service-category {
+    padding: 80px 0;
+    border-bottom: 1px solid rgba(255,215,0,0.1);
+}
+
+.service-category:last-of-type {
+    border-bottom: none;
+}
+
+.category-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.category-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(255,215,0,0.2) 0%, rgba(255,165,0,0.2) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 2rem;
+    color: var(--accent-gold);
+}
+
+.category-title {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-light);
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.category-subtitle {
+    font-size: 1.1rem;
+    color: rgba(243,229,245,0.7);
+}
+
+/* Hair Services Grid */
+.hair-services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.hair-column {
+    background: linear-gradient(145deg, rgba(42,14,69,0.4) 0%, rgba(25,10,45,0.6) 100%);
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.column-header {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255,215,0,0.2);
+}
+
+.column-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.service-item {
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(255,215,0,0.08);
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.service-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.service-item p {
+    color: rgba(243,229,245,0.7);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.service-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding: 4px 12px;
+    background: rgba(255,215,0,0.1);
+    border: 1px solid rgba(255,215,0,0.3);
+    border-radius: 12px;
+    font-size: 0.75rem;
+    color: var(--accent-gold);
+    white-space: nowrap;
+}
+
+/* Makeup Tabs */
+.service-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.tab-btn {
+    padding: 14px 32px;
+    background: transparent;
+    border: 2px solid rgba(255,215,0,0.3);
+    border-radius: 50px;
+    color: rgba(243,229,245,0.7);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.tab-btn:hover {
+    border-color: rgba(255,215,0,0.6);
+    color: var(--accent-gold);
+}
+
+.tab-btn.active {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    border-color: transparent;
+    color: #0F0523;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Makeup Grid */
+.makeup-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.makeup-card {
+    background: linear-gradient(145deg, rgba(42,14,69,0.4) 0%, rgba(25,10,45,0.6) 100%);
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.makeup-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255,215,0,0.4);
+    box-shadow: 0 10px 40px rgba(255,215,0,0.2);
+}
+
+.makeup-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(255,215,0,0.2) 0%, rgba(255,165,0,0.2) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.5rem;
+    color: var(--accent-gold);
+}
+
+.makeup-card h4 {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 12px;
+}
+
+.makeup-card p {
+    color: rgba(243,229,245,0.7);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.addon-card {
+    background: linear-gradient(135deg, rgba(255,215,0,0.1) 0%, rgba(255,165,0,0.1) 100%);
+    border-color: rgba(255,215,0,0.3);
+}
+
+.addon-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+}
+
+.addon-list li {
+    color: rgba(243,229,245,0.8);
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.addon-list i {
+    color: var(--accent-gold);
+}
+
+/* Bridal Showcase */
+.bridal-showcase {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.bridal-main {
+    background: linear-gradient(145deg, rgba(42,14,69,0.4) 0%, rgba(25,10,45,0.6) 100%);
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.bridal-main h3 {
+    font-size: 2rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bridal-main h3 i {
+    color: var(--accent-gold);
+}
+
+.bridal-services {
+    margin-bottom: 30px;
+}
+
+.bridal-service-item {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255,215,0,0.08);
+}
+
+.bridal-service-item:last-child {
+    border-bottom: none;
+}
+
+.bridal-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, rgba(255,215,0,0.2) 0%, rgba(255,165,0,0.2) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--accent-gold);
+    font-size: 1.3rem;
+}
+
+.bridal-details h4 {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.bridal-details p {
+    color: rgba(243,229,245,0.7);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.bridal-cta {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.btn-bridal-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 36px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0F0523;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 30px rgba(255,215,0,0.4);
+}
+
+.btn-bridal-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(255,215,0,0.6);
+}
+
+.bridal-looks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bridal-looks h4 {
+    font-size: 1.3rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.look-card {
+    background: linear-gradient(145deg, rgba(42,14,69,0.4) 0%, rgba(25,10,45,0.6) 100%);
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.look-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0F0523;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.look-card h5 {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.look-card p {
+    color: rgba(243,229,245,0.7);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Facial Groups */
+.facial-group {
+    margin-bottom: 50px;
+}
+
+.facial-group:last-child {
+    margin-bottom: 0;
+}
+
+.group-title {
+    font-size: 1.8rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.group-title i {
+    color: var(--accent-gold);
+}
+
+.facial-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.facial-grid.specialized {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.facial-card {
+    background: linear-gradient(145deg, rgba(42,14,69,0.4) 0%, rgba(25,10,45,0.6) 100%);
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.facial-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255,215,0,0.4);
+    box-shadow: 0 10px 30px rgba(255,215,0,0.2);
+}
+
+.facial-card.advanced {
+    border-color: rgba(255,165,0,0.3);
+}
+
+.facial-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 4px 10px;
+    background: rgba(255,215,0,0.2);
+    border: 1px solid rgba(255,215,0,0.4);
+    border-radius: 12px;
+    font-size: 0.7rem;
+    color: var(--accent-gold);
+}
+
+.facial-badge.advanced-badge {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0F0523;
+    border: none;
+}
+
+.facial-card h4 {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+    padding-right: 60px;
+}
+
+.facial-card p {
+    color: rgba(243,229,245,0.7);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Grooming Grid */
+.grooming-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.grooming-card {
+    background: linear-gradient(145deg, rgba(42,14,69,0.4) 0%, rgba(25,10,45,0.6) 100%);
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.grooming-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255,215,0,0.4);
+    box-shadow: 0 10px 30px rgba(255,215,0,0.2);
+}
+
+.grooming-card.highlighted {
+    background: linear-gradient(145deg, rgba(255,215,0,0.08) 0%, rgba(255,165,0,0.08) 100%);
+    border-color: rgba(255,215,0,0.3);
+}
+
+.grooming-card i {
+    font-size: 2.5rem;
+    color: var(--accent-gold);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.grooming-card h4 {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 12px;
+}
+
+.grooming-card p {
+    color: rgba(243,229,245,0.7);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.enhancement-tags {
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Nails Showcase */
+.nails-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.nail-card {
+    background: linear-gradient(145deg, rgba(42,14,69,0.4) 0%, rgba(25,10,45,0.6) 100%);
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.nail-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255,215,0,0.4);
+    box-shadow: 0 15px 40px rgba(255,215,0,0.3);
+}
+
+.nail-card.featured {
+    border-color: rgba(255,215,0,0.3);
+}
+
+.nail-card.bridal-special {
+    border-color: rgba(255,165,0,0.4);
+}
+
+.nail-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.nail-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(15,5,35,0.8) 100%);
+}
+
+.nail-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 6px 14px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0F0523;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.nail-badge.bridal-badge {
+    background: linear-gradient(135deg, #FF69B4 0%, #FFD700 100%);
+}
+
+.nail-content {
+    padding: 24px;
+}
+
+.nail-content h4 {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.nail-content p {
+    color: rgba(243,229,245,0.7);
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin-bottom: 14px;
+}
+
+.nail-duration {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: rgba(255,215,0,0.1);
+    border: 1px solid rgba(255,215,0,0.2);
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+}
+
+.nail-duration i {
+    font-size: 0.9rem;
+}
+
+/* Services CTA */
+.services-cta {
+    padding: 100px 0;
+    background: linear-gradient(135deg, rgba(42,14,69,0.8) 0%, rgba(15,5,35,1) 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 30% 50%, rgba(255,215,0,0.1) 0%, transparent 40%),
+        radial-gradient(circle at 70% 50%, rgba(255,105,180,0.1) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.cta-content-services {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content-services h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-light);
+    margin-bottom: 16px;
+}
+
+.cta-content-services p {
+    font-size: 1.15rem;
+    color: rgba(243,229,245,0.7);
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-services-primary,
+.btn-services-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.btn-services-primary {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0F0523;
+    box-shadow: 0 10px 40px rgba(255,215,0,0.4);
+}
+
+.btn-services-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 50px rgba(255,215,0,0.6);
+}
+
+.btn-services-secondary {
+    background: transparent;
+    border: 2px solid rgba(255,215,0,0.4);
+    color: var(--accent-gold);
+}
+
+.btn-services-secondary:hover {
+    background: rgba(255,215,0,0.1);
+    border-color: var(--accent-gold);
+    transform: translateY(-4px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .services-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .category-title {
+        font-size: 2.2rem;
+    }
+
+    .hair-services-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .makeup-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .service-tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tab-btn {
+        width: 100%;
+    }
+
+    .bridal-showcase {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .facial-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .grooming-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .nails-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .cta-content-services h2 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .btn-services-primary,
+    .btn-services-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .service-category {
+        padding: 60px 0;
+    }
+}
+
+/* ========================================
+   NEW SERVICES PAGE - COMPLETE REDESIGN
+   ======================================== */
+
+/* Hero Section */
+.services-hero-new {
+    position: relative;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 140px 0 80px;
+    overflow: hidden;
+}
+
+.hero-bg-image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(15,5,35,0.92) 0%,
+        rgba(42,14,69,0.88) 30%,
+        rgba(25,10,45,0.90) 70%,
+        rgba(15,5,35,0.93) 100%
+    );
+    backdrop-filter: blur(2px);
+}
+
+.hero-floating-shapes {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero-floating-shapes .shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.25;
+    animation: float-drift 15s ease-in-out infinite;
+}
+
+.hero-floating-shapes .shape-1 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,215,0,0.5) 0%, transparent 70%);
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.hero-floating-shapes .shape-2 {
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(255,105,180,0.5) 0%, transparent 70%);
+    top: 50%;
+    right: 10%;
+    animation-delay: 5s;
+}
+
+.hero-floating-shapes .shape-3 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255,165,0,0.5) 0%, transparent 70%);
+    bottom: 15%;
+    left: 40%;
+    animation-delay: 10s;
+}
+
+@keyframes float-drift {
+    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.25; }
+    25% { transform: translate(40px, -50px) scale(1.15); opacity: 0.35; }
+    50% { transform: translate(-30px, -80px) scale(0.9); opacity: 0.2; }
+    75% { transform: translate(50px, -40px) scale(1.1); opacity: 0.3; }
+}
+
+.hero-content-centered {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 10px 24px;
+    background: linear-gradient(135deg, rgba(255,215,0,0.18) 0%, rgba(255,105,180,0.18) 100%);
+    border: 1.5px solid rgba(255,215,0,0.4);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: var(--accent-gold);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(255,215,0,0.2);
+}
+
+.hero-title-new {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle-accent {
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: rgba(243,229,245,0.95);
+    margin-top: 8px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle-new {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: rgba(243,229,245,0.85);
+    max-width: 650px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero-cta-group {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-hero-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0F0523;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 12px 45px rgba(255,215,0,0.5);
+}
+
+.btn-hero-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 60px rgba(255,215,0,0.7);
+}
+
+.btn-hero-primary i {
+    transition: transform 0.3s ease;
+}
+
+.btn-hero-primary:hover i {
+    transform: translateX(6px);
+}
+
+.btn-hero-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 38px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,215,0,0.5);
+    color: var(--accent-gold);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.05rem;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.btn-hero-outline:hover {
+    background: rgba(255,215,0,0.15);
+    border-color: var(--accent-gold);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 40px rgba(255,215,0,0.3);
+}
+
+.hero-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 20px;
+    padding: 24px 45px;
+    background: linear-gradient(135deg, rgba(42,14,69,0.6) 0%, rgba(25,10,45,0.7) 100%);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,215,0,0.25);
+    border-radius: 80px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.4);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FF69B4 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: rgba(243,229,245,0.7);
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 45px;
+    background: linear-gradient(to bottom, transparent, rgba(255,215,0,0.4), transparent);
+}
+
+.gradient-text-animated {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 30%, #FF69B4 60%, #FFD700 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-shift 4s linear infinite;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+/* Main Services Container */
+.services-main-new {
+    background: linear-gradient(180deg, rgba(15,5,35,1) 0%, rgba(25,10,45,1) 100%);
+}
+
+.service-section-new {
+    padding: 80px 0;
+    border-bottom: 1px solid rgba(255,215,0,0.08);
+}
+
+.service-section-new:last-child {
+    border-bottom: none;
+}
+
+.section-header-new {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-badge-new {
+    display: inline-block;
+    padding: 6px 18px;
+    background: linear-gradient(135deg, rgba(255,215,0,0.12) 0%, rgba(255,105,180,0.12) 100%);
+    border: 1px solid rgba(255,215,0,0.25);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    color: var(--accent-gold);
+}
+
+.section-title-new {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.section-desc-new {
+    font-size: 1.05rem;
+    color: rgba(243,229,245,0.7);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ==================
+   HAIR SERVICES
+   ================== */
+
+.hair-two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.hair-column {
+    background: linear-gradient(145deg, rgba(42,14,69,0.35) 0%, rgba(25,10,45,0.5) 100%);
+    border: 1px solid rgba(255,215,0,0.12);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.column-header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid rgba(255,215,0,0.15);
+}
+
+.column-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.column-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+}
+
+.hair-service-card {
+    display: flex;
+    gap: 18px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255,215,0,0.06);
+}
+
+.hair-service-card:last-child {
+    border-bottom: none;
+}
+
+.hair-service-img {
+    width: 110px;
+    height: 90px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.hair-service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.hair-service-card:hover .hair-service-img img {
+    transform: scale(1.1);
+}
+
+.img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(15,5,35,0.5) 100%);
+}
+
+.hair-service-content {
+    flex: 1;
+}
+
+.hair-service-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.hair-service-content p {
+    font-size: 0.9rem;
+    color: rgba(243,229,245,0.65);
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.hair-tags-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.hair-tag {
+    padding: 3px 10px;
+    background: rgba(255,215,0,0.08);
+    border: 1px solid rgba(255,215,0,0.25);
+    border-radius: 10px;
+    font-size: 0.75rem;
+    color: var(--accent-gold);
+}
+
+/* ==================
+   MAKEUP & BRIDAL
+   ================== */
+
+.service-tabs-new {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.tab-btn-new {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 30px;
+    background: transparent;
+    border: 2px solid rgba(255,215,0,0.25);
+    color: rgba(243,229,245,0.7);
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn-new:hover {
+    border-color: rgba(255,215,0,0.5);
+    color: var(--accent-gold);
+}
+
+.tab-btn-new.active {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    border-color: transparent;
+    color: #0F0523;
+    box-shadow: 0 8px 25px rgba(255,215,0,0.35);
+}
+
+.tab-content-new {
+    display: none;
+}
+
+.tab-content-new.active {
+    display: block;
+}
+
+.makeup-grid-new {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.makeup-card-new {
+    background: linear-gradient(145deg, rgba(42,14,69,0.35) 0%, rgba(25,10,45,0.5) 100%);
+    border: 1px solid rgba(255,215,0,0.12);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.makeup-card-new:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255,215,0,0.35);
+    box-shadow: 0 15px 35px rgba(255,215,0,0.2);
+}
+
+.makeup-img-box {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.makeup-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.makeup-card-new:hover .makeup-img-box img {
+    transform: scale(1.08);
+}
+
+.makeup-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(15,5,35,0.7) 100%);
+}
+
+.makeup-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 4px 12px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0F0523;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.makeup-content-box {
+    padding: 18px;
+}
+
+.makeup-content-box h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+.makeup-content-box p {
+    font-size: 0.85rem;
+    color: rgba(243,229,245,0.65);
+    line-height: 1.5;
+}
+
+/* Add-ons */
+.addons-section-new {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.addons-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 25px;
+}
+
+.addons-grid-new {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.addon-card-new {
+    padding: 20px;
+    background: linear-gradient(145deg, rgba(255,215,0,0.08) 0%, rgba(255,165,0,0.08) 100%);
+    border: 1px solid rgba(255,215,0,0.2);
+    border-radius: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.addon-card-new:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255,215,0,0.4);
+    box-shadow: 0 8px 20px rgba(255,215,0,0.15);
+}
+
+.addon-icon {
+    font-size: 2rem;
+    color: var(--accent-gold);
+    margin-bottom: 10px;
+}
+
+.addon-card-new h5 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+/* Bridal Services */
+.bridal-services-grid-new {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.bridal-card-new {
+    background: linear-gradient(145deg, rgba(42,14,69,0.35) 0%, rgba(25,10,45,0.5) 100%);
+    border: 1px solid rgba(255,215,0,0.12);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.bridal-card-new:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255,215,0,0.35);
+    box-shadow: 0 18px 40px rgba(255,215,0,0.25);
+}
+
+.bridal-card-new.featured {
+    border-color: rgba(255,215,0,0.25);
+}
+
+.bridal-img-wrapper {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bridal-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.bridal-card-new:hover .bridal-img-wrapper img {
+    transform: scale(1.08);
+}
+
+.bridal-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(15,5,35,0.75) 100%);
+}
+
+.featured-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 14px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0F0523;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.bridal-card-content {
+    padding: 22px;
+}
+
+.bridal-card-content h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.bridal-card-content p {
+    font-size: 0.9rem;
+    color: rgba(243,229,245,0.65);
+    line-height: 1.6;
+}
+
+/* Signature Looks */
+.signature-looks-section-new {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.signature-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 35px;
+}
+
+.signature-looks-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.signature-look-card {
+    position: relative;
+    height: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.signature-look-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.signature-look-card:hover img {
+    transform: scale(1.1);
+}
+
+.signature-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(15,5,35,0.85) 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 25px;
+    transition: background 0.3s ease;
+}
+
+.signature-look-card:hover .signature-overlay {
+    background: linear-gradient(to bottom, rgba(15,5,35,0.3) 0%, rgba(15,5,35,0.9) 100%);
+}
+
+.look-info h5 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 6px;
+}
+
+.look-info p {
+    font-size: 0.9rem;
+    color: rgba(243,229,245,0.8);
+}
+
+.signature-cta {
+    margin-top: 30px;
+}
+
+.btn-bridal-explore {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 35px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0F0523;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(255,215,0,0.35);
+}
+
+.btn-bridal-explore:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255,215,0,0.5);
+}
+
+/* ==================
+   FACIALS & SKINCARE
+   ================== */
+
+.facial-category-new {
+    margin-bottom: 60px;
+}
+
+.facial-category-new:last-child {
+    margin-bottom: 0;
+}
+
+.category-heading-new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 35px;
+}
+
+.category-heading-new i {
+    font-size: 2rem;
+    color: var(--accent-gold);
+}
+
+.facials-grid-new {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.facial-card-new {
+    background: linear-gradient(145deg, rgba(42,14,69,0.35) 0%, rgba(25,10,45,0.5) 100%);
+    border: 1px solid rgba(255,215,0,0.12);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.facial-card-new:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,215,0,0.3);
+    box-shadow: 0 12px 30px rgba(255,215,0,0.2);
+}
+
+.facial-card-new.advanced {
+    border-color: rgba(255,165,0,0.2);
+}
+
+.facial-img-wrapper {
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+}
+
+.facial-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.facial-card-new:hover .facial-img-wrapper img {
+    transform: scale(1.08);
+}
+
+.facial-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(15,5,35,0.65) 100%);
+}
+
+.time-badge,
+.advanced-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 10px;
+    background: rgba(255,215,0,0.2);
+    border: 1px solid rgba(255,215,0,0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    z-index: 2;
+}
+
+.advanced-badge {
+    background: linear-gradient(135deg, #FF69B4 0%, #FFA500 100%);
+    border: none;
+    color: #fff;
+}
+
+.facial-card-content {
+    padding: 16px;
+}
+
+.facial-card-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.facial-card-content p {
+    font-size: 0.85rem;
+    color: rgba(243,229,245,0.65);
+    line-height: 1.4;
+}
+
+/* Specialized Treatments */
+.specialized-grid-new {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.specialized-card-new {
+    background: linear-gradient(145deg, rgba(42,14,69,0.35) 0%, rgba(25,10,45,0.5) 100%);
+    border: 1px solid rgba(255,215,0,0.12);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    transition: all 0.4s ease;
+}
+
+.specialized-card-new:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,215,0,0.3);
+    box-shadow: 0 15px 35px rgba(255,215,0,0.25);
+}
+
+.specialized-img {
+    width: 40%;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+
+.specialized-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.specialized-card-new:hover .specialized-img img {
+    transform: scale(1.08);
+}
+
+.specialized-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, transparent 0%, rgba(15,5,35,0.5) 100%);
+}
+
+.specialized-content {
+    flex: 1;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.specialized-content h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.specialized-content p {
+    font-size: 0.9rem;
+    color: rgba(243,229,245,0.65);
+    line-height: 1.6;
+}
+
+/* Waxing & Grooming */
+.waxing-grid-new {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.waxing-card-new {
+    position: relative;
+    background: linear-gradient(145deg, rgba(42,14,69,0.35) 0%, rgba(25,10,45,0.5) 100%);
+    border: 1px solid rgba(255,215,0,0.12);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.waxing-card-new:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,215,0,0.3);
+    box-shadow: 0 12px 30px rgba(255,215,0,0.2);
+}
+
+.waxing-card-new.premium {
+    border-color: rgba(255,215,0,0.25);
+}
+
+.waxing-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.premium-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 4px 12px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0F0523;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.waxing-card-new h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.waxing-card-new p {
+    font-size: 0.9rem;
+    color: rgba(243,229,245,0.65);
+    line-height: 1.5;
+}
+
+/* ==================
+   NAILS
+   ================== */
+
+.nails-showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.nail-card-lg {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: linear-gradient(145deg, rgba(42,14,69,0.35) 0%, rgba(25,10,45,0.5) 100%);
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.nail-card-lg:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255,215,0,0.35);
+    box-shadow: 0 20px 45px rgba(255,215,0,0.3);
+}
+
+.nail-img-lg {
+    height: 65%;
+    position: relative;
+    overflow: hidden;
+}
+
+.nail-img-lg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.nail-card-lg:hover .nail-img-lg img {
+    transform: scale(1.08);
+}
+
+.nail-overlay-lg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(15,5,35,0.75) 100%);
+}
+
+.nail-badge-featured {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    padding: 6px 16px;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0F0523;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.nail-content-lg {
+    padding: 28px;
+}
+
+.nail-content-lg h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.nail-content-lg p {
+    font-size: 1rem;
+    color: rgba(243,229,245,0.7);
+    line-height: 1.6;
+}
+
+.nail-card-reg {
+    background: linear-gradient(145deg, rgba(42,14,69,0.35) 0%, rgba(25,10,45,0.5) 100%);
+    border: 1px solid rgba(255,215,0,0.12);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.nail-card-reg:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255,215,0,0.3);
+    box-shadow: 0 12px 30px rgba(255,215,0,0.2);
+}
+
+.nail-card-reg.bridal-special {
+    border-color: rgba(255,105,180,0.25);
+}
+
+.nail-img-reg {
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nail-img-reg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.nail-card-reg:hover .nail-img-reg img {
+    transform: scale(1.08);
+}
+
+.nail-overlay-reg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(15,5,35,0.65) 100%);
+}
+
+.bridal-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 12px;
+    background: linear-gradient(135deg, #FF69B4 0%, #FFD700 100%);
+    color: #fff;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    z-index: 2;
+}
+
+.nail-content-reg {
+    padding: 16px;
+}
+
+.nail-content-reg h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 6px;
+}
+
+.nail-content-reg p {
+    font-size: 0.85rem;
+    color: rgba(243,229,245,0.65);
+    line-height: 1.4;
+}
+
+/* ==================
+   CTA SECTION
+   ================== */
+
+.services-cta-new {
+    padding: 80px 0;
+    background: linear-gradient(135deg, rgba(42,14,69,0.6) 0%, rgba(25,10,45,0.8) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.services-cta-new::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        radial-gradient(circle at 25% 35%, rgba(255,215,0,0.12) 0%, transparent 50%),
+        radial-gradient(circle at 75% 65%, rgba(255,105,180,0.12) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.cta-content-new {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.cta-content-new h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.cta-content-new p {
+    font-size: 1.1rem;
+    color: rgba(243,229,245,0.75);
+    margin-bottom: 35px;
+}
+
+.cta-buttons-new {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.btn-cta-primary,
+.btn-cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 38px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+.btn-cta-primary {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    color: #0F0523;
+    box-shadow: 0 10px 30px rgba(255,215,0,0.4);
+}
+
+.btn-cta-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(255,215,0,0.6);
+}
+
+.btn-cta-secondary {
+    background: transparent;
+    border: 2px solid rgba(255,215,0,0.35);
+    color: var(--accent-gold);
+}
+
+.btn-cta-secondary:hover {
+    border-color: var(--accent-gold);
+    background: rgba(255,215,0,0.08);
+}
+
+/* WhatsApp Float */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 8px 25px rgba(37,211,102,0.5);
+    z-index: 999;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 12px 35px rgba(37,211,102,0.7);
+}
+
+/* ==================
+   RESPONSIVE
+   ================== */
+
+@media (max-width: 992px) {
+    .hair-two-col-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .makeup-grid-new {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .facials-grid-new {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .waxing-grid-new {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nails-showcase-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nail-card-lg {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-hero-new {
+        min-height: auto;
+        padding: 100px 0 60px;
+    }
+
+    .hero-content-centered {
+        max-width: 100%;
+        gap: 16px;
+    }
+
+    .hero-badge {
+        font-size: 0.8rem;
+        padding: 8px 20px;
+    }
+
+    .hero-title-new {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle-accent {
+        font-size: 2rem;
+        margin-top: 6px;
+    }
+
+    .hero-subtitle-new {
+        font-size: 1.05rem;
+        line-height: 1.6;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+        gap: 12px;
+        margin-top: 6px;
+    }
+
+    .btn-hero-primary,
+    .btn-hero-outline {
+        width: 100%;
+        justify-content: center;
+        padding: 16px 32px;
+        font-size: 1rem;
+    }
+
+    .hero-stats {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px 25px;
+        padding: 20px 25px;
+        margin-top: 16px;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    .stat-divider {
+        display: none;
+    }
+
+    .hero-floating-shapes .shape-1 {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-floating-shapes .shape-2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-floating-shapes .shape-3 {
+        width: 160px;
+        height: 160px;
+    }
+
+    .section-title-new {
+        font-size: 2.2rem;
+    }
+
+    .service-tabs-new {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tab-btn-new {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .makeup-grid-new {
+        grid-template-columns: 1fr;
+    }
+
+    .bridal-services-grid-new {
+        grid-template-columns: 1fr;
+    }
+
+    .signature-looks-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .addons-grid-new {
+        grid-template-columns: 1fr;
+    }
+
+    .facials-grid-new {
+        grid-template-columns: 1fr;
+    }
+
+    .specialized-grid-new {
+        grid-template-columns: 1fr;
+    }
+
+    .specialized-card-new {
+        flex-direction: column;
+    }
+
+    .specialized-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .waxing-grid-new {
+        grid-template-columns: 1fr;
+    }
+
+    .nails-showcase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nail-card-lg {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .nail-img-lg {
+        height: 250px;
+    }
+
+    .cta-content-new h2 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons-new {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-cta-primary,
+    .btn-cta-secondary {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+
