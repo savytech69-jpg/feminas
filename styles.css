@@ -107,9 +107,16 @@ a {
 }
 
 .btn-white {
-    background: white;
-    color: var(--primary-bg);
+    background: transparent;
+    border: 2px solid var(--accent-gold);
+    color: var(--accent-gold);
     font-weight: 700;
+}
+
+.btn-white:hover {
+    background: var(--accent-gold);
+    color: var(--primary-dark);
+    transform: translateY(-1px);
 }
 
 .btn-sm {
@@ -131,7 +138,7 @@ a {
 
 /* Navbar */
 .navbar {
-    padding: 20px 0;
+    padding: 5px 0;
     position: absolute;
     width: 100%;
     top: 0;
@@ -154,7 +161,7 @@ a {
 }
 
 .logo-img {
-    height: 52px;
+    height: 80px;
     width: auto;
     object-fit: contain;
     filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
@@ -409,6 +416,8 @@ a {
     text-transform: uppercase;
     color: var(--accent-gold);
     margin-bottom: 10px;
+    position: relative;
+    z-index: 10;
 }
 
 .hero-list {
@@ -427,6 +436,146 @@ a {
 
 .hero-list i {
     color: var(--accent-gold);
+}
+
+/* Bridal Card Enhancements */
+.bridal-mega-badge {
+    background: 
+        linear-gradient(135deg, rgba(255, 215, 0, 0.25) 0%, rgba(255, 105, 180, 0.25) 100%),
+        radial-gradient(ellipse at top, rgba(255, 215, 0, 0.2), transparent 70%),
+        radial-gradient(ellipse at bottom, rgba(255, 105, 180, 0.2), transparent 70%);
+    border: 2px solid rgba(255, 215, 0, 0.6);
+    border-radius: 16px;
+    padding: 14px 12px;
+    margin: 8px 0 10px;
+    text-align: center;
+    box-shadow: 
+        0 0 30px rgba(255, 215, 0, 0.5),
+        0 0 60px rgba(255, 105, 180, 0.3),
+        inset 0 0 30px rgba(255, 215, 0, 0.15),
+        inset 0 2px 2px rgba(255, 255, 255, 0.2),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: pulse-rich 3s ease-in-out infinite;
+}
+
+@keyframes pulse-rich {
+    0%, 100% { 
+        box-shadow: 
+            0 0 30px rgba(255, 215, 0, 0.5),
+            0 0 60px rgba(255, 105, 180, 0.3),
+            inset 0 0 30px rgba(255, 215, 0, 0.15),
+            inset 0 2px 2px rgba(255, 255, 255, 0.2),
+            inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+    }
+    50% { 
+        box-shadow: 
+            0 0 50px rgba(255, 215, 0, 0.7),
+            0 0 80px rgba(255, 105, 180, 0.5),
+            inset 0 0 40px rgba(255, 215, 0, 0.25),
+            inset 0 2px 2px rgba(255, 255, 255, 0.3),
+            inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.bridal-mega-badge::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 50%, rgba(255, 215, 0, 0.2) 100%);
+    pointer-events: none;
+}
+
+.mega-offer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.mega-flat {
+    font-size: 1rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.8)) drop-shadow(0 0 30px rgba(255, 215, 0, 0.5));
+}
+
+.mega-number {
+    font-size: 2.8rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 40%, #FF69B4 80%, #FFD700 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 0.85;
+    filter: 
+        drop-shadow(0 0 20px rgba(255, 215, 0, 0.8)) 
+        drop-shadow(0 0 40px rgba(255, 215, 0, 0.6))
+        drop-shadow(0 0 60px rgba(255, 105, 180, 0.4));
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.percent {
+    font-size: 1.5rem;
+    margin-left: -2px;
+}
+
+.mega-text {
+    font-size: 1.6rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    filter: 
+        drop-shadow(0 0 15px rgba(255, 215, 0, 0.8)) 
+        drop-shadow(0 0 30px rgba(255, 215, 0, 0.5))
+        drop-shadow(0 0 45px rgba(255, 105, 180, 0.3));
+}
+
+.bridal-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 10px !important;
+    font-weight: 700;
+    margin-top: 0 !important;
+}
+
+.bridal-features {
+    margin-bottom: 14px !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 8px;
+}
+
+.bridal-features li {
+    padding: 5px 0;
+    font-size: 0.85rem;
+}
+
+.bridal-features li:last-child {
+    padding-bottom: 0;
+}
+
+.bridal-features i {
+    font-size: 1rem;
+    color: #FFD700;
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
 }
 
 .hero-sparkles {
@@ -697,6 +846,7 @@ a {
 
 .full-width {
     width: 100%;
+    text-align: center;
 }
 
 /* Modern Footer */
