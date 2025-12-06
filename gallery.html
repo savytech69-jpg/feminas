@@ -1,46 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery • Feminas Family Makeover Studio</title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div id="include-header"></div>
 
-  <header class="page-header">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Fancybox for Lightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+</head>
+
+<body class="gallery-page">
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="container">
-      <h1 class="page-title">Gallery</h1>
-      <div class="breadcrumbs">
-        <a href="index.html">Home</a>
-        <span class="sep">›</span>
-        <span>Gallery</span>
+      <a href="index.html" class="logo">
+        <img src="images/femlogo.png" alt="Feminas Family Makeover Studio logo" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html" class="btn-nav">Book Now</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
       </div>
+    </div>
+  </nav>
+
+  <!-- Modern Image Hero Section -->
+  <header class="gallery-hero-image">
+    <div class="hero-bg-image"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content-modern" data-aos="fade-up" data-aos-duration="1000">
+      <span class="hero-badge" data-aos="fade-down" data-aos-delay="200">Our Portfolio</span>
+      <h1 class="hero-title-image" data-aos="zoom-in" data-aos-delay="400">Artistry In Motion</h1>
+      <p class="hero-subtitle-image" data-aos="fade-up" data-aos-delay="600">Experience the fusion of luxury and style
+      </p>
     </div>
   </header>
 
-  <main class="section gallery">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Our <span class="text-gold">Gallery</span></h2>
-        <p class="section-subtitle">Real clients, real glow—see the Feminas experience.</p>
+  <main class="section gallery-section-modern">
+    <div class="container-fluid"> <!-- Full width feeling -->
+
+      <!-- Filter / Categories (Visual Only for now) -->
+      <div class="gallery-filters" data-aos="fade-up">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Bridal</button>
+        <button class="filter-btn">Spa</button>
+        <button class="filter-btn">Hair</button>
+        <button class="filter-btn">Nails</button>
       </div>
-      <div class="gallery-grid">
-        <div class="gallery-item"><img src="https://placehold.co/400x400/5a1c86/FFF?text=Interior" alt="Salon Interior"></div>
-        <div class="gallery-item"><img src="https://placehold.co/400x400/5a1c86/FFF?text=Makeup" alt="Makeup Work"></div>
-        <div class="gallery-item"><img src="https://placehold.co/400x400/5a1c86/FFF?text=Hair" alt="Hair Styling"></div>
-        <div class="gallery-item"><img src="https://placehold.co/400x400/5a1c86/FFF?text=Spa" alt="Spa Treatment"></div>
-        <div class="gallery-item"><img src="https://placehold.co/400x400/5a1c86/FFF?text=Bridal" alt="Bridal Look"></div>
-        <div class="gallery-item"><img src="https://placehold.co/400x400/5a1c86/FFF?text=Products" alt="Products"></div>
+
+      <div class="gallery-masonry-bento">
+
+        <!-- Gallery Item 1 (Large) -->
+        <a href="images/gallery/gallery_01.png" class="gallery-item-bento large" data-fancybox="gallery"
+          data-caption="Traditional Bridal Makeup - Timeless Elegance" data-aos="fade-up">
+          <div class="img-wrapper">
+            <img src="images/gallery/gallery_01.png" alt="Traditional Bridal Makeup" loading="lazy">
+          </div>
+          <div class="overlay-content">
+            <h3>Traditional Bridal</h3>
+            <p>Timeless Elegance</p>
+            <div class="explore-icon"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+
+        <!-- Gallery Item 2 -->
+        <a href="images/gallery/gallery_02.jpg" class="gallery-item-bento tall" data-fancybox="gallery"
+          data-caption="Radiant Bride - Glowing Perfection" data-aos="fade-up" data-aos-delay="100">
+          <div class="img-wrapper">
+            <img src="images/gallery/gallery_02.jpg" alt="Radiant Bride" loading="lazy">
+          </div>
+          <div class="overlay-content">
+            <h3>Radiant Bride</h3>
+            <p>Glowing Perfection</p>
+            <div class="explore-icon"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+
+        <!-- Gallery Item 3 -->
+        <a href="images/gallery/gallery_03.jpg" class="gallery-item-bento" data-fancybox="gallery"
+          data-caption="Hydra Facial - Deep Glow" data-aos="fade-up" data-aos-delay="200">
+          <div class="img-wrapper">
+            <img src="images/gallery/gallery_03.jpg" alt="Hydra Facial" loading="lazy">
+          </div>
+          <div class="overlay-content">
+            <h3>Hydra Facial</h3>
+            <p>Deep Glow</p>
+            <div class="explore-icon"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+
+        <!-- Gallery Item 4 -->
+        <a href="images/gallery/gallery_04.jpg" class="gallery-item-bento wide" data-fancybox="gallery"
+          data-caption="Hair Transformation - Color & Style" data-aos="fade-up">
+          <div class="img-wrapper">
+            <img src="images/gallery/gallery_04.jpg" alt="Hair Transformation" loading="lazy">
+          </div>
+          <div class="overlay-content">
+            <h3>Hair Transformation</h3>
+            <p>Color & Style</p>
+            <div class="explore-icon"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+
+        <!-- Gallery Item 5 -->
+        <a href="images/gallery/gallery_05.jpg" class="gallery-item-bento" data-fancybox="gallery"
+          data-caption="Zen Spa - Relaxation" data-aos="fade-up" data-aos-delay="100">
+          <div class="img-wrapper">
+            <img src="images/gallery/gallery_05.jpg" alt="Zen Spa" loading="lazy">
+          </div>
+          <div class="overlay-content">
+            <h3>Zen Spa</h3>
+            <p>Relaxation</p>
+            <div class="explore-icon"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+
+        <!-- Gallery Item 6 -->
+        <a href="images/gallery/gallery_06.jpg" class="gallery-item-bento tall" data-fancybox="gallery"
+          data-caption="Nail Art - Creative Designs" data-aos="fade-up" data-aos-delay="200">
+          <div class="img-wrapper">
+            <img src="images/gallery/gallery_06.jpg" alt="Nail Art" loading="lazy">
+          </div>
+          <div class="overlay-content">
+            <h3>Nail Art</h3>
+            <p>Creative Designs</p>
+            <div class="explore-icon"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+
+        <!-- Gallery Item 7 (Wide) -->
+        <a href="images/gallery/gallery_07.jpg" class="gallery-item-bento wide" data-fancybox="gallery"
+          data-caption="Aromatherapy - Soothing Senses" data-aos="fade-up">
+          <div class="img-wrapper">
+            <img src="images/gallery/gallery_07.jpg" alt="Aromatherapy" loading="lazy">
+          </div>
+          <div class="overlay-content">
+            <h3>Aromatherapy</h3>
+            <p>Soothing Senses</p>
+            <div class="explore-icon"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+
+        <!-- Gallery Item 8 -->
+        <a href="images/gallery/gallery_08.png" class="gallery-item-bento" data-fancybox="gallery"
+          data-caption="Bridal Updo - Classic Styling" data-aos="fade-up" data-aos-delay="100">
+          <div class="img-wrapper">
+            <img src="images/gallery/gallery_08.png" alt="Bridal Updo" loading="lazy">
+          </div>
+          <div class="overlay-content">
+            <h3>Bridal Updo</h3>
+            <p>Classic Styling</p>
+            <div class="explore-icon"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+
+        <!-- Gallery Item 9 -->
+        <a href="images/gallery/gallery_09.png" class="gallery-item-bento large" data-fancybox="gallery"
+          data-caption="Party Glam - Night Out" data-aos="fade-up" data-aos-delay="200">
+          <div class="img-wrapper">
+            <img src="images/gallery/gallery_09.png" alt="Party Glam" loading="lazy">
+          </div>
+          <div class="overlay-content">
+            <h3>Party Glam</h3>
+            <p>Night Out</p>
+            <div class="explore-icon"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+
+        <!-- Gallery Item 10 -->
+        <a href="images/gallery/gallery_10.jpg" class="gallery-item-bento" data-fancybox="gallery"
+          data-caption="Spa Manicure - Luxury Care" data-aos="fade-up">
+          <div class="img-wrapper">
+            <img src="images/gallery/gallery_10.jpg" alt="Spa Manicure" loading="lazy">
+          </div>
+          <div class="overlay-content">
+            <h3>Spa Manicure</h3>
+            <p>Luxury Care</p>
+            <div class="explore-icon"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </a>
+
       </div>
     </div>
   </main>
 
-  <div id="include-footer"></div>
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/918907288617?text=Hi" class="whatsapp-float" target="_blank" rel="noopener"
+    aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
-  <script src="js/include.js"></script>
+  <!-- Mobile Sticky Bar -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:+918907288617" class="sticky-action">
+      <i class="fas fa-phone-alt"></i>
+      <span>Call</span>
+    </a>
+    <a href="https://wa.me/918907288617" class="sticky-action">
+      <i class="fab fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="contact.html" class="sticky-action highlight">
+      <i class="fas fa-calendar-check"></i>
+      <span>Book</span>
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-modern">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Section -->
+        <div class="footer-col footer-brand-col">
+          <div class="footer-logo">
+            <img src="images/femlogo.png" alt="Feminas Logo" class="footer-logo-img">
+            <div>
+              <h3 class="footer-title">FEMINAS</h3>
+              <p class="footer-tagline">Family Makeover Studio</p>
+            </div>
+          </div>
+          <p class="footer-desc">Your sanctuary for beauty, bridal elegance, and complete family makeovers. Experience
+            luxury treatments in a women-exclusive space.</p>
+          <div class="footer-social">
+            <a href="https://share.google/AwCaTw1k7DMM2Dc3y" target="_blank" rel="noopener" aria-label="Google Reviews"
+              class="social-link">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="https://www.facebook.com/feminasspa/" target="_blank" rel="noopener" aria-label="Facebook"
+              class="social-link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/feminas_family_makeover_studio/" target="_blank" rel="noopener"
+              aria-label="Instagram" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#bridal">Bridal Makeup</a></li>
+            <li><a href="services.html#hair">Hair Styling</a></li>
+            <li><a href="services.html#spa">Spa & Wellness</a></li>
+            <li><a href="services.html#facials">Facials</a></li>
+            <li><a href="services.html#packages">Packages</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Get In Touch</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+918907288617">+91 89072 88617</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@feminas.in">info@feminas.in</a>
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Ulloor, Near Mandhi Manzil, Trivandrum</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>10:00 AM - 8:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Feminas Family Makeover Studio. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#privacy">Privacy Policy</a>
+          <span class="separator">•</span>
+          <a href="#terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+
+
+  <!-- Libraries -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <script>
+    // Navigation Logic
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => navLinks.classList.toggle('active'));
+    }
+
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      mirror: false,
+      offset: 100
+    });
+
+    // Initialize Fancybox
+    Fancybox.bind("[data-fancybox]", {
+      // Custom options
+      Carousel: {
+        infinite: false,
+      },
+    });
+
+    // Custom Cursor Logic
+    const cursorDot = document.querySelector('.cursor-dot');
+    const cursorOutline = document.querySelector('.cursor-outline');
+
+    window.addEventListener('mousemove', (e) => {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorDot.style.left = `${posX}px`;
+      cursorDot.style.top = `${posY}px`;
+
+      // Animate outline with a slight delay if possible, or just sync for now
+      cursorOutline.animate({
+        left: `${posX}px`,
+        top: `${posY}px`
+      }, { duration: 500, fill: "forwards" });
+    });
+
+    // Hover effect for cursor
+    document.querySelectorAll('a, button, .gallery-item-bento').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursorOutline.style.transform = "translate(-50%, -50%) scale(1.5)";
+        cursorOutline.style.borderColor = "var(--accent-magenta)";
+      });
+      el.addEventListener('mouseleave', () => {
+        cursorOutline.style.transform = "translate(-50%, -50%) scale(1)";
+        cursorOutline.style.borderColor = "rgba(255, 255, 255, 0.5)";
+      });
+    });
+
+  </script>
 </body>
+
 </html>
