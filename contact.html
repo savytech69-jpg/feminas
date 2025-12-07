@@ -1,75 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Appointment • Feminas Family Makeover Studio</title>
+  <title>Contact Us • Feminas Family Makeover Studio</title>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <div id="include-header"></div>
 
-  <header class="page-header">
+<body class="contact-page">
+
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="container">
-      <h1 class="page-title">Book Appointment</h1>
-      <div class="breadcrumbs">
-        <a href="index.html">Home</a>
-        <span class="sep">›</span>
-        <span>Book Appointment</span>
+      <a href="index.html" class="logo">
+        <img src="images/femlogo.png" alt="Feminas Family Makeover Studio logo" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
       </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="contact-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge" data-aos="fade-down">Get In Touch</span>
+      <h1 class="hero-title" data-aos="zoom-in" data-aos-delay="200">Contact Us</h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">We'd love to hear from you. Book your appointment
+        today!</p>
     </div>
   </header>
 
-  <main class="section booking">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Book Your <span class="text-magenta">Appointment</span></h2>
-        <p class="section-subtitle">Fill in your details or chat with us on WhatsApp for quick assistance.</p>
-      </div>
-      <div class="booking-wrapper">
-        <div class="booking-info">
-          <div class="contact-details">
-            <div class="detail-item"><i class="fas fa-map-marker-alt"></i> 123, Fashion Street, City Center</div>
-            <div class="detail-item"><i class="fas fa-phone-alt"></i> +91 98765 43210</div>
-            <div class="detail-item"><i class="fab fa-whatsapp"></i> +91 98765 43211</div>
-          </div>
-          <a href="https://wa.me/918907288617" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
-        </div>
-        <div class="booking-form-container">
-          <form class="booking-form">
-            <div class="form-group">
-              <label>Name</label>
-              <input type="text" placeholder="Your Name" required>
+  <!-- Main Contact Section -->
+  <main class="contact-main">
+    <div class="container-wide">
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <div class="contact-form-section" data-aos="fade-right">
+          <h2 class="form-title">Send us a Message</h2>
+          <p class="form-subtitle">Fill out the form below and we'll get back to you shortly</p>
+
+          <form action="https://formsubmit.co/savytech69@gmail.com" method="POST" class="contact-form">
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_subject" value="New Booking from Feminas Website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="box">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
             </div>
-            <div class="form-group">
-              <label>Phone Number</label>
-              <input type="tel" placeholder="Your Phone" required>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                  <option value="">Select Service</option>
+                  <option value="Bridal Makeup">Bridal Makeup</option>
+                  <option value="Facial Treatment">Facial Treatment</option>
+                  <option value="Hair Styling">Hair Styling</option>
+                  <option value="Nail Care">Nail Care</option>
+                  <option value="Spa Services">Spa Services</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
             </div>
+
             <div class="form-group">
-              <label>Service</label>
-              <select>
-                <option>Select Service</option>
-                <option>Facial</option>
-                <option>Hair Cut/Spa</option>
-                <option>Bridal Makeup</option>
-                <option>Other</option>
-              </select>
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="preferred_date">
             </div>
+
             <div class="form-group">
-              <label>Preferred Date</label>
-              <input type="date">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"
+                placeholder="Tell us about your requirements..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary full-width">Confirm Booking</button>
+
+            <button type="submit" class="btn-submit">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
           </form>
+        </div>
+
+        <!-- Map & Info Section -->
+        <div class="contact-info-section" data-aos="fade-left">
+
+          <!-- Google Map -->
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.6888301132713!2d76.92775197352273!3d8.529560096609941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05b9daa6ff889f%3A0x8000f02677fccb11!2sFeminas%20Family%20Makeover%20Studio!5e0!3m2!1sen!2sin!4v1765030833923!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <!-- Info Cards -->
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3>Visit Us</h3>
+                <p>Feminas Family Makeover Studio<br>Kerala, India</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3>Call Us</h3>
+                <p>+91 98765 43210<br>+91 98765 43211</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="info-content">
+                <h3>Working Hours</h3>
+                <p>Mon - Sat: 9:00 AM - 8:00 PM<br>Sunday: By Appointment</p>
+              </div>
+            </div>
+
+            <div class="info-card whatsapp-card">
+              <div class="info-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="info-content">
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/918907288617" class="whatsapp-link">
+                  Chat with us instantly
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
   </main>
 
+  <!-- Footer -->
   <div id="include-footer"></div>
 
+  <!-- Scripts -->
   <script src="js/include.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 </body>
+
 </html>

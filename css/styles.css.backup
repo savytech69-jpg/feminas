@@ -6002,7 +6002,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../images/contact-hero.png') center/cover no-repeat;
+    background: linear-gradient(135deg, #1a0033 0%, #2d0a4e 50%, #1a0033 100%);
     overflow: hidden;
 }
 
