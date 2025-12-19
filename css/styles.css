@@ -6070,6 +6070,77 @@ a {
         max-width: 300px;
         justify-content: center;
     }
+
+    .hero-meta {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .meta-item {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+
+    .meta-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .hair-service-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hair-service-img {
+        width: 100%;
+        height: 200px;
+        max-width: none;
+    }
+
+    .cta-group {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        gap: 15px;
+    }
+
+    .cta-group .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .bridal-mega-badge {
+        padding: 8px 6px;
+        margin: 5px 0 8px;
+        width: 100%;
+        max-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mega-offer {
+        gap: 2px;
+        justify-content: center;
+    }
+
+    .mega-text,
+    .mega-flat {
+        font-size: 0.7rem;
+    }
+
+    .mega-number {
+        font-size: 1.8rem;
+        line-height: 1;
+    }
 }
 
 /* ===== CONTACT PAGE STYLES ===== */
