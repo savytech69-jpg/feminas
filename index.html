@@ -4,23 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feminas Family Makeover Studio</title>
+    <meta name="description" content="Feminas Family Makeover Studio in Trivandrum - Premier beauty salon offering bridal makeup, luxury facials, hair styling, spa treatments, nail care. 30+ years expertise. Book now!">
+    <meta name="keywords" content="beauty salon Trivandrum, bridal makeup Kerala, luxury spa Ulloor, hair salon Trivandrum, nail art Kerala, women beauty parlour, family makeover studio">
+    <meta name="author" content="Feminas Family Makeover Studio">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.feminas.in/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Feminas Family Makeover Studio - Luxury Beauty & Bridal Services Trivandrum">
+    <meta property="og:description" content="Premier beauty salon in Trivandrum offering bridal makeup, luxury facials, hair styling, spa treatments. 30+ years experience. Women-exclusive space.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.feminas.in/">
+    <meta property="og:image" content="https://www.feminas.in/images/femlogo.png">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Feminas Family Makeover Studio">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Feminas Family Makeover Studio - Luxury Beauty Services">
+    <meta name="twitter:description" content="Premier beauty salon in Trivandrum offering bridal makeup, luxury facials, hair styling, spa treatments.">
+    <meta name="twitter:image" content="https://www.feminas.in/images/femlogo.png">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN-KL">
+    <meta name="geo.placename" content="Trivandrum">
+    <meta name="geo.position" content="8.529560;76.930222">
+    <meta name="ICBM" content="8.529560, 76.930222">
+    
+    <title>Feminas Family Makeover Studio - Best Beauty Salon & Bridal Makeup in Trivandrum</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Feminas Family Makeover Studio",
+      "image": "https://www.feminas.in/images/femlogo.png",
+      "description": "Premier beauty salon in Trivandrum offering bridal makeup, luxury facials, hair styling, spa treatments, and nail care with 30+ years of expertise.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near Mandhi Manzil",
+        "addressLocality": "Ulloor",
+        "addressRegion": "Trivandrum, Kerala",
+        "postalCode": "695011",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "8.529560",
+        "longitude": "76.930222"
+      },
+      "telephone": "+918907288617",
+      "email": "info@feminas.in",
+      "url": "https://www.feminas.in",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "10:00",
+          "closes": "20:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "500"
+      },
+      "sameAs": [
+        "https://www.facebook.com/feminasspa/",
+        "https://www.instagram.com/feminas_family_makeover_studio/"
+      ]
+    }
+    </script>
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <a href="index.html" class="logo">
-                <img src="images/femlogo.png" alt="Feminas Family Makeover Studio logo" class="logo-img">
+            <a href="index.html" class="logo" aria-label="Feminas Family Makeover Studio Home">
+                <img src="images/femlogo.png" alt="Feminas Family Makeover Studio - Luxury Beauty Salon Logo" class="logo-img">
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" role="menubar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -33,7 +105,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="hero">
+    <header id="home" class="hero" role="banner">
         <div class="hero-bg-layer"></div>
         <div class="hero-overlay"></div>
         <div class="hero-sparkles">
@@ -176,10 +248,10 @@
     </section>
 
     <!-- Featured Services -->
-    <section class="section services-asymmetric">
+    <section class="section services-asymmetric" id="services" aria-labelledby="services-heading">
         <div class="container-wide">
             <div class="section-header-clean">
-                <h2 class="title-elegant">Our Signature Services</h2>
+                <h2 class="title-elegant" id="services-heading">Our Signature Services</h2>
                 <p class="subtitle-refined">Luxury treatments crafted for your perfect moment</p>
             </div>
             <div class="services-grid-modern">
